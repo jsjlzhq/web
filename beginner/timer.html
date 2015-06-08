@@ -1,0 +1,42 @@
+<!--setTimeout clearTimeout 用例-->
+
+<html>
+
+<head>
+<script type="text/javascript">
+/*function timedMsg()
+{
+	var t = setTimeout("alert('5 seconds!')", 5000);
+}*/
+var c=0;
+var t;
+function timedCount()
+{
+	document.getElementById('txt').value=c;
+	c=c+1;
+	t = setTimeout("timedCount()",1000);
+	document.getElementById('log').innerHTML += c+",";
+}
+
+function stopCount()
+{
+	clearTimeout(t);
+}
+</script>
+</head>
+
+<body>
+<form>
+<!--<input type="button" value="Display timed alertbox!" onClick="timedMsg()">-->
+<input type="button" value="Start count!" onClick="timedCount()">
+<input type="text" id="txt">
+<input type="button" value="Stop count!" onClick="stopCount()">
+<br/>
+<p id="log" >
+log:
+</p>
+
+</form>
+</body>
+
+</html>
