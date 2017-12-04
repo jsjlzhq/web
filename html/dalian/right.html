@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div align="right">
+		<button>快速留言</button>
+	</div>
+	<form action="1.php" method="get" enctype="multipart/form-data">
+		<label bgcolor="red">撰写留言</label><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>留言标题：</b>
+		<input type="text" name="title" maxlength="30" />您可以输入30个字<br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>留言类型：</b>
+		<input type="radio" name="type" value="1" id="complaint" /><label for="complaint">投诉</label>
+		<input type="radio" name="type" value="2" id="opinion" /><label for="opinion">意见</label>
+		<input type="radio" name="type" value="4" id="advice" /><label for="advice">建议</label>
+		<input type="radio" name="type" value="8" id="consult" /><label for="consult">咨询</label>
+		<input type="radio" name="type" value="16" id="help" /><label for="help">求助</label>
+		<input type="radio" name="type" value="32" id="other"/><label for="other">其他</label>*<br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>留言类别：</b>
+		<select name="category">
+			<option selected="true">请选择</option>
+			<option>户口</option>
+			<option>城市建设</option>
+			<option>道路</option>
+			<option>其他</option>
+		</select>*<br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>受理单位：	</b>
+		<input type="text" readonly="true" name="filename" />
+		<button>选择</button><input type="checkbox" name="unknown" id="unknown"/><label for="unknown">我不知道部门</label><br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>留言正文：</b>
+        <textarea rows="20" cols="50"></textarea>
+		<br><br>
+		<font size="1">您可以输入2000个字</font>
+		<br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>图片上传：</b><br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>是否公开：</b><br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>您的姓名：</b><br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>性   别：</b><br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>年   龄：</b><br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>文化程度：</b><br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>职   业：</b><br><br>
+		&nbsp;&nbsp;&nbsp;<b>填写联系方式：</b><br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>验证码：</b><br><br>
+	</form>
+</body>
+</html>
