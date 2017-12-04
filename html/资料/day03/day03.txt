@@ -1,0 +1,107 @@
+﻿1、分帧：
+	iframe   （网页中的网页） <iframe></iframe>
+		src:引入链接的地址
+		width:宽度
+		height:高度
+		frameborder:控制边框是否显示， 值为1，显示边框，  值为0，不显示边框
+		scrolling:是否显示滚动条，(yes/no/auto)
+			yes显示滚动条，（默认值）
+			no不显示滚动条
+			auto:自适应。  若网页本身的大小大于显示区域的大小，会显示滚动条。
+			若网页本身的大小小于显示区域的大小，不会显示滚动条。
+		name:起名字   配合a标签的target属性来验证。
+	frameset：（按区域划分网页）<frameset></frameset>
+		[注]：不能再写body标签。
+		rows：按行来划分区域，
+		cols:按列来划分区域。
+		border:边框
+		bordercolor:边框颜色
+		noresize: 若设置了此属性，不能调整大小。设置前有个前提，就是必须显示边框。
+		frameborder:有无边框，  值为1 表示有边框，  值为0 表示没有边框。
+		
+		<frame />:用来显示每一个小窗口的内容
+		src:跳转的路径
+		scrolling：滚动条是否显示  （yes/no/auto）
+			yes显示滚动条，（默认值）
+			no不显示滚动条
+			auto:自适应。  若网页本身的大小大于显示区域的大小，会显示滚动条。
+			若网页本身的大小小于显示区域的大小，不会显示滚动条。
+		name:起名字。
+	noframes:为不支持框架的浏览器显示文本信息来准备的，要写到frameset标签中。<noframes></noframes>
+2、表单（非常重要）
+	form:表单标签
+		<form></form>
+		【注】:把所有的输入框全部放到form表单中，否则是无法提交的。
+		action：提交的地址（通常是提交给php文件）
+		method：提交的方法
+				get:通过url地址栏传递参数，参数可见，不安全，传输的数据量小一些
+				post:通过http协议的header头传输数据，不可见，传输的数据量要大一些。
+		enctype:编码类型，默认不写。只有当（上传文件）的时候，需要设置
+			enctype="multipart/form-data";	
+	input: 输入框标签  <input />
+		【注】：每一个提交给后台的输入框都要起一个名字name，方便后台区分。
+		size:可见字符的个数
+		maxlength:允许输入的最大字符长度。
+		value:输入框默认显示的值
+		readonly:只读
+		disabled:禁用状态，默认输入框会变成灰色。
+		placeholder：提示信息。
+		name：起名字。
+		
+		type属性：
+			text：文本类型，默认属性
+			password：密码类型
+			radio:单选按钮
+				【注】:1、必须设置一个名字,并且name值要一致。
+					   2、必须给一个value值
+					   3、默认选中使用checked,
+			checkbox：多选按钮，
+				【注】：1、必须设置一个名字，并且名字采用ai[]这种方式
+						2、必须给一个value值，值一般采用1,2,4,8,16
+						3、默认选中使用checked
+			file:上传文件，同时需要设置表单的enctype="multipart/form-data".
+			hidden:隐藏域。主要用于项目中的修改和删除操作（通常传递的是id），在浏览器中不可见。
+			submit：提交按钮，默认值是提交，如果要修改其显示的值，需要用到value属性。
+			button：按钮，主要配合后面的js使用。
+			reset：重置按钮， 默认的值为重置，要修改显示内容，使用value属性。
+	button：<button></button>   
+			作用和input  type="submit" 一样，但是没有文本信息。
+	label:<label></label>专门为输入框中点击文本的时候，做一个选中的操作。(单选按钮和多选按钮都可使用)
+		属性 for：for的值需要和输入框中的id属性的值一致。
+	select：下拉框
+		属性：
+		size:显示内容的长度
+		name：起名字
+		multiple：实现多选，  配合按住ctrl键
+	option:<option></option>  需要写到select标签中
+		value: 值   一般采用数字编码
+		selected:默认选中
+	textarea:文本区域  <textarea></textarea>  	在标签之间写内容，会显示到浏览器中
+		rows: 多少行
+		cols: 多少列
+		name: 起名字
+	
+3、头部标签:不显示在浏览器中   都放在head标签中
+		设置字符集：<meta charset="utf-8" />
+		标题：<title></title>
+		配合css:<link rel="stylesheet type="text/css" href="路径" />
+		
+		seo优化：
+		<meta name="keywords" content="部署的关键词" />
+		<meta name="description" content="部署的关键词" />
+	
+		自动跳转：<meta http-equiv="refresh" content="3,url=" />
+			content的第一个参数：秒数，表示几秒钟跳转
+					第二个参数：url:表示要跳转到的地址。
+
+		（百度站长   百度指数 长尾关键词  网站经常去访问一下）
+
+4、文档类型声明
+声明是h5的：  <!DOCTYPE html>    声明html文件的版本信息的，必须位于html文件的第一行，也就是在<html>的上面
+	
+作业：	1、用分帧实现以下论坛项目的后台
+        2、大连民意网----我有话说
+	3、今天的代码，表单代码至少3遍。
+	
+
+	
