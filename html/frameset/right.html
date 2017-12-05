@@ -2,24 +2,68 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <style type="text/css">
+        td {
+            font-size:13px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        table tr {
+            border-style: dotted;
+            border-width: 1px 0px 0px 0px;
+            border-color: #E0F0FB;
+        }
+        .dot {
+            border-style: dotted;
+            border-width: 0px 0px 1px 0px;
+            border-color: #E0F0FB;
+        }
+        p {
+            background:#F2F8FD; 
+            height: 40px;
+            font-size: 14px;
+            color: #0099D5;
+            line-height:40px;
+        }
+        
+    </style>
 </head>
 <body>
     <form action="1.php">
-        <h3><font color="#0099D5">站点信息</font></h3>
-        站点名称:<br /><br />
-        <input size="30"/>&nbsp;&nbsp;&nbsp;&nbsp;站点名称，将显示在浏览器窗口标题等位置<br /><br />
-        网站名称:<br /><br />
-        <input size="30"/>&nbsp;&nbsp;&nbsp;&nbsp;网站名称，将显示在页面底部的联系方式处<br /><br />
-        网站URL:<br /><br />
-        <input size="30"/>&nbsp;&nbsp;&nbsp;&nbsp;网站URL，将作为链接显示在页面底部<br /><br />
-        网站备案信息代码:<br /><br />
-        <input size="30"/>&nbsp;&nbsp;&nbsp;&nbsp;页面底部可以显示ICP备案信息，如果网站已备案，在此输入你的授权码，它将显示在页面底部，如果没有请留空<br /><br /><br />
-        <h4>关闭站点</h4>
-        关闭站点:<br /><br />
-        <input type="radio" name="closeweb" value="1" size="50">是</input>
-        <input type="radio" name="closeweb" value="0" size="50" checked>否</input>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;暂时将站点关闭，其他人无法访问，但不影响管理员访问</span><br /><br />
-        
+        <b><font size="3px" color="#0099D5">站点信息</font></b><br/><br/>
+        <table cellpadding="5px">
+            <tr valign="bottom">
+                <td width="200"><b>站点名称:</b><br/><br/><input type="text"/></td>
+                <td >站点名称，将显示在浏览器窗口标题等位置</td>
+            </tr>
+            <tr valign="bottom">
+                <td width="200"><b>网站名称:</b><br/><br/><input type="text"/></td>
+                <td >网站名称，将显示在页面底部的联系方式处</td>
+            </tr>
+            <tr valign="bottom">
+                <td width="200"><b>网站URL:</b><br/><br/><input type="text"/></td>
+                <td >网站URL，将作为链接显示在页面底部</td>
+            </tr>
+            <tr valign="bottom">
+                <td width="200"><b>网站备案信息代码:</b><br/><br/><input type="text"/></td>
+                <td >页面底部可以显示ICP备案信息，如果网站已备案，在此输入你的授权码，它将显示在页面底部，如果没有请留空</td>
+            </tr>
+        </table>
+        <p valign="middle">
+            <b>关闭站点</b>
+        </p>
+        <table cellpadding="5px">
+            <tr class="dot" valign="bottom">
+                <td width="200">
+                    <b>关闭站点:</b><br/><br/>
+                    <input type="radio" name="closeweb" class="closeweb_y" /><label for="closeweb_y">是</label>
+                    <input type="radio" name="closeweb" class="closeweb_n" /><label for="closeweb_n">否</label>
+                </td>
+                <td >暂时将站点关闭，其他人无法访问，但不影响管理员访问</td>
+            </tr>
+        </table>
+        <br/>
         <input type="submit" value="提交" /><br />
     </form>
 </body>
