@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.div1 {
+				width:200px;
+				height:200px;
+				background-color:red;
+			}
+			.div2 {
+				width:200px;
+				height:200px;
+				background-color:yellow;
+				display:inline;
+			}
+			.div3 {
+				width:200px;
+				height:200px;
+				background-color:blue;
+				/*转换为行内元素*/
+				display:inline;
+				
+			}
+			.span {
+				color:green;
+				width:200px;
+				height:200px;
+				background-color:purple;
+				/*转换为块元素*/
+				display:block;
+			
+			}
+			.div4 {
+				width:200px;
+				height:200px;
+				background-color:pink;
+				/*转换为行内块元素*/
+				display:inline-block;
+			
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div class="div1"></div>
+		<div class="div2">我为什么显示不出来呢？</div>
+		<div class="div3">我来回答你，因为你变成了行内元素，行内元素的宽和高是需要靠内容撑起来的。</div>
+		<span class="span">我是一个无意义的标签，</span>
+		我是来验证你怎样转换为行内块元素的。
+		<div class="div4">我现在是一个块级元素，想要转换为行内块元素。</div>
+	
+	</body>
+
+</html>

@@ -1,0 +1,175 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-size:12px;
+}
+
+/*广告开始部分*/
+.ad {
+	width:100%;
+	height:80px;
+	background-color:#125DAB;
+	text-align:center;
+}
+/*广告结束部分*/
+
+
+/*导航开始部分*/
+.nav {
+	width:100%;
+	height:30px;
+	background-color:#E3E4E5;	
+}
+.nav .nav_left {
+	margin-left:245px;
+	color:#999;
+	height:30px;
+	line-height:30px;
+	float:left;
+	
+}
+.nav .nav_left img,.nav .nav_right ul li img,.search .car img {
+	vertical-align:middle;
+}
+.nav .nav_right ul {
+	float:right;
+	margin-right:65px;
+}
+.nav .nav_right ul li {
+	float:left;
+	list-style:none;
+	height:30px;
+	line-height:30px;
+	padding:0px 10px;
+}
+.nav .nav_right ul li a {
+	text-decoration:none;
+}
+.nav .nav_right ul li a:link {
+	color:#999;
+}
+.nav .nav_right ul li a:hover {
+	color:#C81623;
+}
+.nav .nav_right ul .xian {
+	width:1px;
+	height:10px;
+	background-color:#999;
+	padding:0px;
+	margin-top:10px;
+}
+/*导航结束部分*/
+
+/*搜索开始部分*/
+.search .dog img{
+	position:relative;
+	top:-30px;
+	left:35px;
+	float:left;
+}
+.search .sou {
+	margin-left:130px;
+	margin-top:25px;
+	float:left;
+}
+.search .sou input[type="text"] {
+	width:498px;
+	height:33px;
+	border:1px solid #F10215;	
+}
+.search .sou button {
+	border:none;
+	width:50px;
+	height:33px;
+	background-color:#F10215;
+	position:relative;
+	top:8px;
+}
+.search .sou ul li {
+	float:left;
+	list-style:none;
+	padding:7px 6px;
+}
+.search .sou ul li a{
+	text-decoration:none;
+}
+.search .sou ul li a:link{
+	color:#9E9E9E;
+}
+.search .sou ul li a:hover{
+	color:#C8165E;
+}
+.search .car {
+	float:left;
+	width:190px;
+	height:35px;
+	background-color:#FFFFFF;
+	border:1px solid #E3E4E5;
+	position:relative;
+	left:30px;
+	top:30px;
+	color:#F10214;
+	line-height:35px;
+	text-align:center;
+}
+.search .er img{
+	float:left;
+	position:relative;
+	left:92px;
+}
+.search .miao ul {
+	float:right;
+	position:relative;
+	left:-375px;
+	top:20px;
+}
+.search .miao ul li{
+	float:left;
+	list-style:none;
+	font-size:16px;
+	font-weight:700;
+	padding:0px 12px;
+}
+.search .miao ul li a{
+	text-decoration:none;
+}
+.search .miao ul li a:link{
+	color:#555;
+}
+.search .miao ul li a:hover{
+	color:#C81623;
+}
+.search .miao .xian {
+	width:1px;
+	height:10px;
+	background-color:#999;
+	padding:0px;
+	margin-top:5px;
+}
+.search .jia img {
+	float:right;
+	position:relative;
+	top:10px;
+	left:565px;
+}
+
+/*搜索结束部分*/
+
+/*正文开始部分*/
+
+	
+
+
+
+
+
+
+/*正文结束部分*/
+
+
+
+
+
+
