@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,div,ul,ol,dl,li,em,i,b,strong,form{font-family:"microsoft YaHei";font-size:12px;}
+
+i,em,cite{font-style:normal;}

@@ -2,13 +2,24 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+    <style type="text/css">
+    div{
+        border-width: 1px 1px 1px 1px;
+    }
+    .title{
+        background-color: #CC0000;
+        font-size: 14px;
+        color: white;
+    }
+    </style>
 </head>
 <body>
 	<div align="right">
 		<button>快速留言</button>
 	</div>
 	<form action="1.php" method="get" enctype="multipart/form-data">
-		<label bgcolor="red">撰写留言</label><br>
+    <div>
+		<label class="title"><b>撰写留言</b></label><br>
 		&nbsp;&nbsp;&nbsp;&nbsp;<b>留言标题：</b>
 		<input type="text" name="title" maxlength="30" />您可以输入30个字<br><br>
 		&nbsp;&nbsp;&nbsp;&nbsp;<b>留言类型：</b>
@@ -43,6 +54,7 @@
 		&nbsp;&nbsp;&nbsp;&nbsp;<b>职   业：</b><br><br>
 		&nbsp;&nbsp;&nbsp;<b>填写联系方式：</b><br><br>
 		&nbsp;&nbsp;&nbsp;&nbsp;<b>验证码：</b><br><br>
+    </div>
 	</form>
 </body>
 </html>
