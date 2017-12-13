@@ -31,13 +31,57 @@
             </table>
         </form>
     </div>
-    <div class="topdiv">
-        <div class="taboption">
-            <span>首页</span>
-            <span>PHP技术交流群</span>
-            <span>程序人生</span>
+    <div class="mainform">
+        <div class="taboptionheader">
+            <span class="firsttab" >首页</span>
+            <span class="secondtab" >PHP技术交流群</span>
+            <span class="thirdtab">程序人生</span>
         </div>
-        <div>
+        <div class="search">
+            <img class="search_img" src="../image/image_06.png" />
+            <div class="search_div">
+                <input class="search_input" value="请输入搜索内容"/><button class="search_btn">搜索</button>
+                <label>热搜:</label>
+                <a>活动</a>
+                <a>交友</a>
+                <a>教程</a>
+            </div>
+        </div>
+        <div class="register">
+            <p class="register_caption">立即注册</p>
+            <form action="register.php">
+                <div class="form_item firstitem">
+                    <div class="form_label"><font>*</font>用户名:</div>
+                    <input class="form_input" type="text" />
+                </div>
+                <div class="form_item">
+                    <div class="form_label"><font>*</font>密码:</div>
+                    <input class="form_input" type="password" />
+                </div>
+                <div class="form_item">
+                    <div class="form_label"><font>*</font>确认密码:</div>
+                    <input class="form_input" type="password" />
+                </div>
+                <div class="form_item">
+                    <div class="form_label"><font>*</font>Email:</div>
+                    <input class="form_input" type="text" />
+                </div>
+                <div class="form_item">
+                    <div class="form_label"><font>*</font>验证码:</div>
+                    <input class="form_input" type="text" />
+                </div>
+            </form>
+            <input class="submit_btn" type="submit" value="提交" />
+        </div>
+    </div>
+    
+    <div class="footer">
+        <hr class="footer_split" />
+        <div class="footer_left">
+            Powered by <font>ccfff</font> v2<br />&copy; 2017 ccfff Inc.
+        </div>
+        <div class="footer_right">
+            京ICP备 89273 | <font>ccfff</font><br/>Time Now Is:07-28 00:06
         </div>
     </div>
 </body>
